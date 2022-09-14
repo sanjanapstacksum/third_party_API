@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="megakit,business,company,agency,multipurpose,modern,bootstrap4"
+    />
+    <meta name="author" content="themefisher.com" />
+    <title>Megakit| Html5 Agency template</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css" />
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="blog-create.css">          
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="navigation">
+      <nav class="navbar navbar-expand-lg py-4" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> Mega<span>kit.</span> </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarsExample09"
+            aria-controls="navbarsExample09"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarsExample09">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
+              <a href="blog-create.html" class="btn btn-solid-border btn-round-full">New blog</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="main-wrapper">
+            <form style="text-align: center; margin-top: 50px;  " id="form">
+                <div class="container" id="one" style=" font: black; padding: 30px; padding-left: 260px;  padding-right: 0px;">
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Title</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control alleve" placeholder="Enter your titlename" id="title">
+                            <span id="firstnameIconStatus" style="display: none; float:left; color: red;">*Title is
+                                required</span>
+                            <span id="fnameval" style="display: none; float:left; color: red;">*Title Must be consists of 2 to 20 letters
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Body</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control alleve" placeholder="Enter your body" id="body1">
+                            <span id="fstatus" style="display: none; float:left; color: red;">*Body is required</span>
+                            <span id="fullnameval" style="display: none; float:left; color: red;">*Body must be consists of 5 to 30 letters</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">image</label>
+                        <div class="col-sm-10">
+                            <input type="url" class="form-control alleve" placeholder="Enter your image path"  pattern="https://.*" required
+                                id="image">
+                            <span id="mobfun" style="display: none; float:left; color: red;" >*Image is required</span>
+                        </div>
+                    </div>
+                    <input type="button" class="btn btn-success" id="btns" style="margin-right: 250px;" value="submit">
+            </form>
+            </div>
+            </div>
+      </section>
+
+    <script src="blog-create.js"></script>
+  </body>
+</html>
