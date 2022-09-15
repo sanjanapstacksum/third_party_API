@@ -21,6 +21,19 @@ regexx.forEach((e) => {
       document.getElementById("fullnameval").style.display = "none";
       document.getElementById("fstatus").style.display = "none";
     }
+
+
+    var image = document.getElementById("image").value;
+    var regex = /(https?:\/\/.*\.(?:png|jpg))/;
+    if (e.target.id == "image" && !image.match(regex)) {
+      document.getElementById("imageVal").style.display = "block";
+      document.getElementById("mobfun").style.display = "none";
+    } else {
+      document.getElementById("imageVal").style.display = "none";
+      document.getElementById("mobfun").style.display = "none";
+    }
+
+
   });
 });
 
@@ -85,6 +98,7 @@ function subfunc(e) {
     return false;
   } else {
     val = true;
+    swal(" Form submitted Successfully !", "", "success");
 
     var blogArr = JSON.parse(localStorage.getItem("blogs"));
     var blogId = blogArr.length + 1;
@@ -98,5 +112,6 @@ function subfunc(e) {
 
     blogArr.push(blogObj);
     localStorage.setItem("blogs", JSON.stringify(blogArr));
+    
   }
 }
